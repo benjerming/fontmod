@@ -1,12 +1,12 @@
 from __future__ import annotations
 
 import logging
-import unicodedata
+# import unicodedata
 
 import fire
 
 from fontmod.FontContext import FontContext
-from fontmod.FontEnumerator import FontEnumerator, FontRecord
+# from fontmod.FontEnumerator import FontEnumerator, FontRecord
 from fontmod.FontPicker import fz_encode_character_with_system_font
 
 WORDS = (

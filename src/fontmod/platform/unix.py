@@ -8,7 +8,7 @@ from fontmod.FontInfo import FontInfo
 
 _font_dirs = [
     Path("/system/fonts"),
-    Path("/usr/local/share/fonts"),
+    Path("/usr/share/fonts"),
     Path("/Library/Fonts"),
 ]
 
