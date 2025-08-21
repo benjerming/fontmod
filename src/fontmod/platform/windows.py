@@ -4,8 +4,8 @@ import logging
 from dataclasses import dataclass
 from pathlib import Path
 
-from fontmod.FontContext import FontContext
-from fontmod.FontInfo import FontInfo
+from fontmod.context import FontContext
+from fontmod.info import FontInfo
 
 
 @dataclass(frozen=True)

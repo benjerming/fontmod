@@ -3,8 +3,8 @@ import sys
 import fontTools
 import fontTools.unicodedata
 
-from fontmod.FontContext import FontContext
-from fontmod.FontInfo import FontInfo
+from fontmod.context import FontContext
+from fontmod.info import FontInfo
 
 if sys.platform == "win32":
     from fontmod.platform.windows import (

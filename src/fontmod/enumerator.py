@@ -3,7 +3,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Generator
 
-from fontmod.FontInfo import FontInfo
+from fontmod.info import FontInfo
 
 
 @dataclass(frozen=True)

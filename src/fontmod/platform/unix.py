@@ -3,8 +3,8 @@ import logging
 from functools import lru_cache
 from pathlib import Path
 
-from fontmod.FontContext import FontContext
-from fontmod.FontInfo import FontInfo
+from fontmod.context import FontContext
+from fontmod.info import FontInfo
 
 _font_dirs = [
     Path("/system/fonts"),

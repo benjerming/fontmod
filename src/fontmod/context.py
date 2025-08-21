@@ -1,4 +1,4 @@
-from fontmod.FontEnumerator import FontInfo
+from fontmod.info import FontInfo
 
 
 class FontContext:
