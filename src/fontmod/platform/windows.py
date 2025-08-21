@@ -252,8 +252,9 @@ def load_system_text_font(
             if serif:
                 ser = ["Noto Naskh Arabic Regular", "Scheherazade"]
                 path = _load_families(ser if serif else sans, bold, italic)
-            sans = ["Noto Sans Arabic Regular", "Dubai Regular"]
-            path = _load_families(ser if serif else sans, bold, italic)
+            else:
+                sans = ["Noto Sans Arabic Regular", "Dubai Regular"]
+                path = _load_families(ser if serif else sans, bold, italic)
         case "Hebr":
             if serif:
                 ser = [
@@ -262,8 +263,9 @@ def load_system_text_font(
                     "David Libre Regular",
                 ]
                 path = _load_families(ser if serif else sans, bold, italic)
-            sans = ["Noto Sans Hebrew Regular"]
-            path = _load_families(ser if serif else sans, bold, italic)
+            else:
+                sans = ["Noto Sans Hebrew Regular"]
+                path = _load_families(ser if serif else sans, bold, italic)
         case "Deva":
             path = _load_families(["Nirmala"], bold, italic)
         case "Thai":
@@ -278,32 +280,39 @@ def load_system_text_font(
             if serif:
                 ser = ["Noto Serif Armenian Regular"]
                 path = _load_families(ser if serif else sans, bold, italic)
-            sans = ["Noto Sans Armenian Regular"]
-            path = _load_families(ser if serif else sans, bold, italic)
+            else:
+                sans = ["Noto Sans Armenian Regular"]
+                path = _load_families(ser if serif else sans, bold, italic)
         case "Geor":
             if serif:
                 ser = ["Noto Serif Georgian Regular"]
                 path = _load_families(ser if serif else sans, bold, italic)
-            sans = ["Noto Sans Georgian Regular"]
-            path = _load_families(ser if serif else sans, bold, italic)
+            else:
+                sans = ["Noto Sans Georgian Regular"]
+                path = _load_families(ser if serif else sans, bold, italic)
         case "Hang":
             path = _load_families(["Malgun Gothic"], bold, italic)
         case "Hira" | "Kata":
             if bold:
                 path = _load_families(["YuGothB"], bold, italic)
-            path = _load_families(["YuGothR"], bold, italic)
+            else:
+                path = _load_families(["YuGothR"], bold, italic)
         case "Bopo":
             if not serif:
                 if bold:
                     path = _load_families(["msjhbd"], bold, italic)
-                path = _load_families(["msjh"], bold, italic)
-            path = _load_families(["mingliub"], bold, italic)
+                else:
+                    path = _load_families(["msjh"], bold, italic)
+            else:
+                path = _load_families(["mingliub"], bold, italic)
         case "Hani":
             if not serif:
                 if bold:
                     path = _load_families(["msyhbd"], bold, italic)
-                path = _load_families(["msyh"], bold, italic)
-            path = _load_families(["simsun"], bold, italic)
+                else:
+                    path = _load_families(["msyh"], bold, italic)
+            else:
+                path = _load_families(["simsun"], bold, italic)
         case (
             "Khmr"
             | "Mong"
